@@ -19,10 +19,10 @@ virtualenv -p python3 venv
 source venv/bin/activate
 ```
 
-You should install the requirements with:
+### Step 3. Install requirements
 
 `pip install -r requirements.txt`
 
-For running your test you may execute the following command:
+### Step 4. Execute test
 
 `python -m unittest`
