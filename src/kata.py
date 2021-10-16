@@ -1,0 +1,2 @@
+def ejemplo():
+    return True
