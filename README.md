@@ -2,11 +2,15 @@
 
 This is the code kata template for python created by [Aula de Software Libre de la Universidad de Córdoba](https://www.uco.es/aulasoftwarelibre/)
 
-### Step 1. Clone the repository
+## Step 1. Use this repository as a template
 
-`git clone git@github.com:aulasoftwarelibre/codekata-template-python.git`
+Press the button "Use this template" and create a new repository on your space.
 
-### Step 2. Create your virtual environment
+## Step 2. Clone the repository
+
+Clone locally your repository.
+
+## Step 3. Create your virtual environment
 
 We are using `virtualenv` for it. You can install it with `pip`:
 
@@ -19,10 +23,10 @@ virtualenv -p python3 venv
 source venv/bin/activate
 ```
 
-### Step 3. Install requirements
+## Step 4. Install requirements
 
 `pip install -r requirements.txt`
 
-### Step 4. Execute test
+## Step 5. Execute test
 
 `python -m unittest`
