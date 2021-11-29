@@ -1,17 +1,11 @@
 import unittest
-from src.kata import ejemplo
+
+from src.kata import is_true
 
 
 class TestKata(unittest.TestCase):
+    def test_is_true(self):
+        self.assertEqual(True, is_true())
 
-    def test_ejemplo_1(self):
-
-        self.assertEqual(True, ejemplo())
-
-    def test_ejemplo_2(self):
-
-        self.assertEqual(False, ejemplo())
-
-
-if __name__ == '__main__':
-    unittest.main()
+    def test_is_true_again(self):
+        self.assertNotEqual(False, is_true())
