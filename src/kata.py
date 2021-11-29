@@ -1,2 +1,2 @@
-def ejemplo():
+def is_true():
     return True

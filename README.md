@@ -10,7 +10,7 @@ Press the button "Use this template" and create a new repository on your space.
 
 Clone locally your repository.
 
-## Step 3. Create your virtual environment
+## Step 3. Install requirements (optional)
 
 We are using `virtualenv` for it. You can install it with `pip`:
 
@@ -23,10 +23,10 @@ virtualenv -p python3 venv
 source venv/bin/activate
 ```
 
-## Step 4. Install requirements
+And install requirements
 
 `pip install -r requirements.txt`
 
-## Step 5. Execute test
+## Step 4. Execute test
 
 `python -m unittest`
