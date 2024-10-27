@@ -1,11 +1,9 @@
-import unittest
-
-from src.kata import is_true
+from kata.is_true import is_true
 
 
-class TestKata(unittest.TestCase):
-    def test_is_true(self):
-        self.assertEqual(True, is_true())
+def test_is_true() -> None:
+    assert is_true() is True
 
-    def test_is_true_again(self):
-        self.assertNotEqual(False, is_true())
+
+def test_is_true_again() -> None:
+    assert is_true() is not False

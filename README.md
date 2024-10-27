@@ -10,23 +10,40 @@ Press the button "Use this template" and create a new repository on your space.
 
 Clone locally your repository.
 
-## Step 3. Install requirements (optional)
+## Step 3. Install package manager
 
-We are using `virtualenv` for it. You can install it with `pip`:
+This template uses [uv](https://docs.astral.sh/uv/) package manager.
 
-`pip install virtualenv`
+To install it you can follow the [official installation manual](https://docs.astral.sh/uv/getting-started/installation/).
 
-To create the virtual environment with `python3` and activate it:
+### Fast installation
+
+You can install running this:
 
 ```
-virtualenv -p python3 venv
-source venv/bin/activate
+curl -LsSf https://astral.sh/uv/install.sh | sh
 ```
+
+If `uv` command does not works is because it requires `$HOME/.cargo/bin` into your `$PATH`.
+
+Run this and/or add to your shell config script:
+
+```
+export PATH=$HOME/.cargo/bin:$PATH
+```
+
+## Step 4. Install requirements
 
 And install requirements
 
-`pip install -r requirements.txt`
+```
+uv sync
+```
 
-## Step 4. Execute test
+## Step 5. Execute test
 
-`python -m unittest`
+```
+uv run pytest
+```
+
+You can also use tests runner in your IDE.
